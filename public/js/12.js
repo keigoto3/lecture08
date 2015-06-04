@@ -1,19 +1,19 @@
-function isLeapYear(a){
+function isLeapYear(a>0){
 
-if(a % 4 == 0 && a % 100 == 0){
-  if(a % 400 == 0){
+if(a % 400 == 0){
     return "true";
   }
-  else{
+
+  else if (a % 100 == 0 && a % 400 != 0){
     return "false";
   }
- }
 
-if else(a % 4 == 0 || a % 100 != 0){
+
+ else if(a % 4 == 0 && a % 100 != 0){
    return "true";
  }
 
- else{
+ else {
    return "false";
  }
 }
